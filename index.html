@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form-style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Form Builder</h1>
+        <div class="grid-2">
+
+            <div class="item" style="height: fit-content;">
+               <div class="form-group">
+
+                
+                <label for="form-label">Label</label>
+                <input type="text" id="form-label" placeholder="Label">
+                
+                <label for="form-element">Form Field</label>
+                <select name="form-element" id="form-element">
+                    <option value="text">Text</option>
+                    <option value="email">Email</option>
+                    <option value="password">Password</option>
+                    <option value="number">Number</option>
+                    <option value="date">Date</option>
+                    <option value="textarea" >Textarea</option>
+                    <option value="select" disabled>Select</option>
+                    <option value="checkbox" disabled>Checkbox</option>
+                    <option value="radio" disabled>Radio</option>
+                </select>
+
+
+                <div style="display: flex; justify-content: end; align-items: center;">
+                    <button class="btn" id="addField">Add Form Field</button>
+                </div>
+                
+               </div>
+            </div>
+
+            <div class="item">
+
+                <h1>Form Preview</h1>
+                <div class="form-group" id="form-preview">
+                
+                </div>  
+
+            </div>  
+        </div>
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
